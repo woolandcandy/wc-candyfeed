@@ -43,6 +43,10 @@ gem 'themes_on_rails'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# Use to manage environment variables
+# Read more: https://github.com/bkeepers/dotenv
+gem 'dotenv-rails'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
