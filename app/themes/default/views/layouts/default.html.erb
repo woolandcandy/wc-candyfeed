@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta information start -->
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="<%= get_meta_description %>">
+  <meta name="author" content="<%= get_meta_author %>">
+  <!-- /Meta information ends -->
+
+  <title><%= get_window_title(yield(:title)) %></title>
+
+  <!-- Favicons -->
+  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"> -->
+
+  <%= stylesheet_link_tag    "default/all", media: "all", "data-turbolinks-track" => true %>
+  
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <%= yield %>
+
+  <!-- Javascript files -->
+  <%= javascript_include_tag "default/all", "data-turbolinks-track" => true %>
+
+</body>
+</html>
