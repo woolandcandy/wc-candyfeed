@@ -1,0 +1,6 @@
+# This is a sampel .env file. 
+# The real .env file should not be in source control
+# The purpose of this file is to manage environment variables
+
+# Generate secret keys via SecureRandom.hex(60)
+SECRET_KEY_BASE=213123213123
