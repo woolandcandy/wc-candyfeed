@@ -17,3 +17,6 @@
 
 # .env file should be ignore and not save in source control
 /.env
+
+# Don't version control compiled assets
+/public/assets
