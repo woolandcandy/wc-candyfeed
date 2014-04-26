@@ -20,3 +20,9 @@
 
 # Don't version control compiled assets
 /public/assets
+/public/uploads
+
+/config/database.yml
+/config/application.yml
+/bin
+/.ruby-version
