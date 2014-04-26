@@ -9,4 +9,5 @@
  *= require 'default/bootstrap.min'
  *= require 'default/font-awesome'
  *= require 'default/style'
+ *= require bootstrap
 */
