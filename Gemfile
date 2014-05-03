@@ -7,6 +7,12 @@ gem 'rails', '4.1.0'
 # Use MySQL as the database for Active Record
 gem "mysql2"
 
+# Use bootstrap framework
+gem 'bootstrap-sass', '~> 3.1.1'
+
+# Use bootstrap datetimepicker
+gem 'bootstrap-datetimepicker-rails'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 
