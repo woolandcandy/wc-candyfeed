@@ -32,10 +32,6 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-# Spring speeds up development by keeping your application running in the 
-# background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
-
 # Add theming functionality to Rails
 # Read more: https://github.com/yoolk/themes_on_rails
 gem 'themes_on_rails'
@@ -58,3 +54,17 @@ gem 'dotenv-rails'
 
 # Authentication gem
 gem 'devise'
+
+group :development do
+  # Add a comment summarizing the current schema to model, etc
+  gem 'annotate'
+
+  # Spring speeds up development by keeping your application running in the 
+  # background. Read more: https://github.com/rails/spring
+  gem 'spring'
+
+  gem 'rspec-rails'
+  gem 'byebug'
+  gem 'pry-byebug'
+  gem 'factory_girl_rails'
+end
