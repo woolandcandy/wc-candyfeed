@@ -10,9 +10,6 @@ gem "mysql2"
 # Use bootstrap framework
 gem 'bootstrap-sass', '~> 3.1.1'
 
-# Use bootstrap datetimepicker
-gem 'bootstrap-datetimepicker-rails'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 
@@ -38,10 +35,6 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-# Spring speeds up development by keeping your application running in the 
-# background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
-
 # Add theming functionality to Rails
 # Read more: https://github.com/yoolk/themes_on_rails
 gem 'themes_on_rails'
@@ -60,5 +53,21 @@ gem 'dotenv-rails'
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+# gem 'debugger', group: [:development, :test
 
+# Authentication gem
+gem 'devise'
+
+group :development do
+  # Add a comment summarizing the current schema to model, etc
+  gem 'annotate'
+
+  # Spring speeds up development by keeping your application running in the 
+  # background. Read more: https://github.com/rails/spring
+  gem 'spring'
+
+  gem 'rspec-rails'
+  gem 'byebug'
+  gem 'pry-byebug'
+  gem 'factory_girl_rails'
+end
