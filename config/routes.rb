@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   # devise_for :users
   devise_for :users, path: '', path_names: {sign_in: 'login', sign_out: 'logout'}
   # root 'stream#index'
-  root to: 'dashboards#index'
+  # root to: 'dashboards#index'
+  get 'dashboards', to: 'dashboards#index'
+
   
   # get 'admin/index'
 
