@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
-  root 'stream#index'
+  # devise_for :users
+  devise_for :users, path: '', path_names: {sign_in: 'login', sign_out: 'logout'}
+  # root 'stream#index'
+  root to: 'dashboards#index'
   
-  get 'admin/index'
+  # get 'admin/index'
 
-  get 'stream/index'
+  # get 'stream/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
